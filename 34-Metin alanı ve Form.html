@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Form Oluşturma ve Metin Alanı</title>
+<style type="text/css">
+	form {padding:20;
+		  font-size:17px;
+		  font-family:Tahoma;
+		  font-weight:bold;
+		  }
+	body {background-image:url(kod.png);
+		  background-repeat:no-repeat;
+		  background-position:center;
+		  padding:10px;}
+	span {font-size:15px;
+		  color:red;}
+		
+	hr	{font-size:30px;}
+	
+	#dil {position:relative;
+		  top:60px;
+		  left:20px;}
+		  
+	#gender {position:relative;
+			 bottom:20;
+			 left:200;
+			 width:80px;
+			 font-weight:lighter;
+			 font-size:17px;
+			 }
+</style>
+</head>
+<body>
+<form>
+Kullanıcı Adınız: <input type="text" name="kullanıcı adı" size="15"/>
+<br>
+Yaşınız: <input type="number" max="90" />
+<br> 
+Favori Rakam: <input type="text" maxlength="1" size="2" />
+<br>
+Şifreniz: <input type="password" name="şifre">
+<br>
+<br>
+<span>(Giriş yapmak için enter'e tıklayınız.)</span>
+<hr/>
+<br/>
+Cinsiyetinizi Seçiniz: 
+<div id="gender">
+Erkek <input type="radio" name="cinsiyet" value="erk"/>
+Kadın <input type="radio" name="cinsiyet" value="kad"/>	
+</div>
+<br>
+<div id="dil">
+Bilinen Diller:
+<br><input type="checkbox" name="dil" value="ing">İngilizce
+<br><input type="checkbox" name="dil" value="LT">Latince
+<br><input type="checkbox" name="dil" value="TR">Türkçe
+<br><input type="checkbox" name="dil" value="Grm">Almanca
+<br><input type="checkbox" name="dil" value="JPN">Japonca
+</div>
+</form>
+</body>
+</html>

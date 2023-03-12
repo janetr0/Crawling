@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Position:Relative</title>
+	<style type="text/css">
+			
+			body {font-size:20px; color:red;
+				  background-image:url(kod.png);
+				  background-repeat:no-repeat;
+				  background-position:bottom;}
+			
+			div {color:yellow;
+			     border:3px solid black;
+				 width:180px;
+				 padding:3px;
+		         position:relative;
+				 left:100px;
+				 top:110px;
+				 //position:absolute;
+				 //left:100px;
+				 //top:120px;}
+			
+			#açıklama {color:blue;
+					   border:4px dashed gray;
+					   padding:7px;
+					   position-relative;
+					   left:500px;
+					   top:260px;}
+	
+	</style>
+</head>
+<body>
+<p>Bu ilk paragraftır.</p>
+<p>Bu ikinci paragraftır.</p>
+<p><div>Bu üçüncü paragraftır.</div></p>
+<p>Bu dördncü paragraftır.</p>
+<p>Bu beşinci paragraftır.</p>
+<p><div id="açıklama"><h4>Gördüğümüz gibi 3. satırı tutuyor relative ama absolute olsaydı onun yerine başkası olacaktı.</div>
+</body>
+</html>
